@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASC Carrers</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-2 mb-4">{{ company_name }} Carrers</h1>
+        <img id="banner" class="img-fluid" src="/static/Header_ Banner.jpg" alt="banner image">
+        <h2 class="text-center">About ASC Carrers</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat quam a velit aliquam lobortis. Ut eget felis neque. Ut non augue a enim faucibus rhoncus eu a ipsum. Maecenas accumsan eros et elit maximus, vitae tempor diam feugiat. Nunc consequat hendrerit mauris, sed fermentum erat mollis vel. Pellentesque egestas nulla id felis vulputate efficitur. Quisque egestas pulvinar odio. Cras facilisis velit porttitor, volutpat ante et, gravida orci. Ut consequat accumsan auctor. Nulla gravida, lectus vel fermentum fringilla, mi diam vehicula dolor, sed elementum leo erat at metus. Nunc dignissim non dolor eu dictum. Nam scelerisque eget orci in elementum.
+        Aliquam finibus iaculis eleifend. Suspendisse blandit, felis a blandit tempus, dui nisl facilisis odio, in malesuada augue velit fermentum diam. Morbi dignissim sagittis tortor eu semper. Maecenas accumsan non lacus et faucibus. Etiam laoreet mauris sit amet purus dignissim tincidunt. Curabitur ut lacinia nisl. Proin rhoncus imperdiet viverra. Suspendisse nibh orci, iaculis ut arcu in, semper iaculis erat. In nulla libero, molestie non leo nec, luctus malesuada leo. Aliquam erat volutpat. Ut molestie mollis risus vel rhoncus. Sed quis malesuada ex. Cras iaculis leo in massa accumsan convallis. Mauris vulputate, lorem sit amet consequat finibus, dui ipsum rhoncus est, vitae dictum ligula tellus id nibh. Nam congue purus ligula, eu pharetra dui sollicitudin eget.
+        </p>
+        <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+        <div>
+
+            {% for job in jobs %}
+                {% include 'jobitem.html' %}
+            {% endfor %}
+           
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-primary btn-lg">Contact Us</button>
+            <p class="mt-4">Copyright 2023, ASC</p>
+        </div>
+    </div>
+</body>
+</html>
