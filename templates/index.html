@@ -11,15 +11,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        #banner{
+            height:360px;
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+    </style>
 </head>
 <body>
+    {% include 'nav.html' %}
+    <img id="banner" class="img-fluid" src="/static/Header_ Banner.jpg" alt="banner image">
     <div class="container">
-        <h1 class="text-center mt-2 mb-4">{{ company_name }} Carrers</h1>
-        <img id="banner" class="img-fluid" src="/static/Header_ Banner.jpg" alt="banner image">
+        <h1 class="text-center mt-2 mb-4">{{ company_name }} Carrers</h1><hr>
+        <div class="row" style="margin-bottom: 16px;">
+        <div class="col-md-6">
         <h2 class="text-center">About ASC Carrers</h2>
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat quam a velit aliquam lobortis. Ut eget felis neque. Ut non augue a enim faucibus rhoncus eu a ipsum. Maecenas accumsan eros et elit maximus, vitae tempor diam feugiat. Nunc consequat hendrerit mauris, sed fermentum erat mollis vel. Pellentesque egestas nulla id felis vulputate efficitur. Quisque egestas pulvinar odio. Cras facilisis velit porttitor, volutpat ante et, gravida orci. Ut consequat accumsan auctor. Nulla gravida, lectus vel fermentum fringilla, mi diam vehicula dolor, sed elementum leo erat at metus. Nunc dignissim non dolor eu dictum. Nam scelerisque eget orci in elementum.
         Aliquam finibus iaculis eleifend. Suspendisse blandit, felis a blandit tempus, dui nisl facilisis odio, in malesuada augue velit fermentum diam. Morbi dignissim sagittis tortor eu semper. Maecenas accumsan non lacus et faucibus. Etiam laoreet mauris sit amet purus dignissim tincidunt. Curabitur ut lacinia nisl. Proin rhoncus imperdiet viverra. Suspendisse nibh orci, iaculis ut arcu in, semper iaculis erat. In nulla libero, molestie non leo nec, luctus malesuada leo. Aliquam erat volutpat. Ut molestie mollis risus vel rhoncus. Sed quis malesuada ex. Cras iaculis leo in massa accumsan convallis. Mauris vulputate, lorem sit amet consequat finibus, dui ipsum rhoncus est, vitae dictum ligula tellus id nibh. Nam congue purus ligula, eu pharetra dui sollicitudin eget.
         </p>
+    </div>
+        <div class="d-none d-md-block col-6">
+        <img src="/static/people_working.webp" alt="people working" style="height: 320px; border-radius: 4px;">
+    </div>
+</div>
         <h2 class="text-center mt-2 mb-4">Open Positions</h2>
         <div>
 
@@ -30,7 +46,7 @@
         </div>
 
         <div class="text-center">
-            <button class="btn btn-primary btn-lg">Contact Us</button>
+            <button class="btn btn-primary btn-lg"><a href="mailto: hello@ASC.com?mailto:hello@ASC.com?subject=Questions%20about%20job%20opening&body=My%20Question%3A%20%7BEnter%20question%7D%0D%0A" style="color: white;" >Contact Us</a></button>
             <p class="mt-4">Copyright 2023, ASC</p>
         </div>
     </div>
